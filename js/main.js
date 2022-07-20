@@ -25,3 +25,18 @@ for (let i = 0; i < 10; i++) {
 }
 
 console.log("ループ終了");
+
+class test {
+    constructor(x, y) {
+        this.x = x
+        this.y = y
+    }
+
+    hellox = function () {
+        alert(this.x)
+    }
+}
+
+const test1 = new test(1 , 2)
+console.log(test1.x);
+test1.hellox()
